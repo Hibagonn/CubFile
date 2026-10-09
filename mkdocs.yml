@@ -1,0 +1,123 @@
+site_name: CubFile ヘルプ
+site_description: Windows 向けファイル管理アプリ CubFile の使い方
+site_url: https://hibagonn.github.io/CubFile/
+repo_url: https://github.com/Hibagonn/CubFile
+repo_name: Hibagonn/CubFile
+edit_uri: ""
+docs_dir: help
+use_directory_urls: true
+copyright: CubFile
+
+theme:
+  name: material
+  language: ja
+  font: false
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/weather-night
+        name: ダークモードに切り替え
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/weather-sunny
+        name: ライトモードに切り替え
+  features:
+    - navigation.footer
+    - navigation.indexes
+    - navigation.top
+    - navigation.tracking
+    - search.suggest
+    - search.highlight
+    - toc.follow
+
+plugins:
+  - search:
+      lang: ja
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - md_in_html
+  - tables
+  - toc:
+      permalink: true
+
+extra_css:
+  - stylesheets/extra.css
+
+nav:
+  - ホーム: index.md
+  - はじめに:
+      - getting-started/index.md
+      - インストール: getting-started/installation.md
+      - 初回起動: getting-started/first-launch.md
+      - 画面構成: getting-started/screen-layout.md
+      - 基本操作: getting-started/basic-operations.md
+      - ファイル操作の注意: getting-started/cautions.md
+  - ファイル操作:
+      - file-operations/index.md
+      - ファイル一覧: file-operations/file-list.md
+      - フォルダ移動: file-operations/navigation.md
+      - コピー: file-operations/copy.md
+      - 移動: file-operations/move.md
+      - 削除: file-operations/delete.md
+      - 名前の変更: file-operations/rename.md
+      - 一括リネーム: file-operations/batch-rename.md
+      - クリップボード: file-operations/clipboard.md
+      - 表示形式: file-operations/view-modes.md
+      - パネル: file-operations/panels.md
+      - ツールバーのボタン: file-operations/custom-buttons.md
+  - LAN・ネットワーク:
+      - network/index.md
+      - LAN接続の基本: network/lan-basics.md
+      - LANデバイス: network/devices.md
+      - ネットワークドライブ: network/network-drives.md
+      - 共有フォルダ: network/shares.md
+      - 接続の確認: network/connection.md
+      - LAN転送: network/transfer.md
+      - 転送予約: network/reservation.md
+      - 進捗表示: network/progress.md
+      - 接続できないとき: network/connection-failures.md
+  - 高度な機能:
+      - advanced/index.md
+      - 振り分け: advanced/sort.md
+      - 自動振り分け: advanced/watch.md
+      - サブフォルダ辞書: advanced/dictionary.md
+      - 重複ファイル: advanced/duplicates.md
+      - 検索: advanced/search.md
+      - 圧縮と展開: advanced/archive.md
+      - LAN差分回収: advanced/collection.md
+      - ログ: advanced/logs.md
+  - 設定:
+      - settings/index.md
+      - 一般: settings/general.md
+      - 外観: settings/appearance.md
+      - パネル: settings/panels.md
+      - 表示: settings/view.md
+      - ファイル操作: settings/file-operations.md
+      - クラウドストレージ: settings/cloud.md
+      - 転送: settings/transfer.md
+      - 自動処理: settings/watch.md
+      - ネットワーク: settings/network.md
+      - LAN差分回収: settings/collection.md
+      - アーカイブ: settings/archive.md
+      - ショートカット: settings/shortcuts.md
+      - アイコン: settings/icons.md
+      - 重複起動: settings/single-instance.md
+  - Free と Plus:
+      - licensing/index.md
+      - エディションの違い: licensing/editions.md
+      - ライセンス登録: licensing/license.md
+  - アップデート:
+      - updates/index.md
+      - 更新確認: updates/check.md
+      - 自動更新: updates/auto.md
+      - 手動更新: updates/manual.md
+  - トラブルシューティング: troubleshooting/index.md
+  - よくある質問: faq.md
